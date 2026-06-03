@@ -182,24 +182,29 @@ h2 {
 }
 
 .cards-grid,
-.contact-grid,
-.image-gallery {
+.contact-grid {
   display: grid;
   gap: 20px;
 }
 
-.cards-grid,
-.image-gallery {
+.cards-grid {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .card,
-.contact-card,
-.gallery-item {
+.contact-card {
   padding: 28px;
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.card-image {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  margin-bottom: 18px;
+  object-fit: cover;
 }
 
 .card h3,
